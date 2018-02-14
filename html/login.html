@@ -1,0 +1,122 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/login.css" type="text/css">
+</head>
+
+
+<body>
+    
+    <div id="header">
+        <div class="section">
+            <div class="logo">
+			<a href="home.html"><img src="images/logo1.jpg" id="logoImage" ></a>
+            </div>
+         </div>
+        </div>
+    
+    <div id="emptyDiv">
+        
+        
+        
+    </div>
+    
+    <div id="description"></div>
+    
+    
+    
+    <div id="container">
+        
+        <div id="container_body">
+            
+            <div>
+                
+                <h2 class="form_title">Login</h2>
+                
+                
+                
+            </div>
+            <!--Form  start-->
+            
+            <div id="form_name">
+               <form name="form" action="home.html" >
+                <div id="email_form">
+                    
+                    <input type="text" name="Email" value=""  placeholder="Username" class="input_email" id="text1">
+                        
+                        
+                
+                </div>
+                
+                <div id="password_form">
+                    
+                    <input type="password" name="Password" value=""  placeholder="Password" class="input_password" id="text2">
+                        
+                        </div>
+                
+                <div>
+                    
+                  <input type="button" value="Login"  onclick="javascript:validate()" id="button" />
+                    
+                </div>
+                <div>
+                    
+                    <input type="button" value="Register"  onclick="Submit()" id="button1" />
+                    
+                </div>
+                
+                
+                </form>
+                
+            </div>
+            
+            <!--form ends-->
+            
+        </div>
+        
+    </div>
+    
+    <div id="footer">
+        <div>
+            <div class="connect">
+                <a href="https://twitter.com/" id="twitter">twitter</a>
+                <a href="http://facebook.com" id="facebook">facebook</a>
+                <a href="http://googleplus.com" id="googleplus">googleplus</a>
+                <a href="http://pinterest.com" id="pinterest">pinterest</a>
+            </div>
+            <p>
+ &copy; copyright 2017 | created by Amandeep kaur, Manpreet sran and Chirag Hans.            
+            </p>
+        </div>
+    </div>
+
+   </body>
+    <!--container ends-->
+ 
+<script type="text/javascript">
+    function validate()
+    {
+        
+        if(   document.getElementById("text1").value == "admin"
+           && document.getElementById("text2").value == "Admin@123" )
+           {
+               location.href="home.html";
+           }
+           else
+           {
+               alert( "Invalid username or password" );
+               location.href="login.html";
+           }
+    }
+
+function Submit(){
+    document.getElementById("button1").onclick = function () {
+        
+        location.href = "registration.html";
+        
+    };
+}
+</script>
+</html>

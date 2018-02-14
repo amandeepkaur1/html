@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body id="hbody">
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				
+			<a href="home.html"><img src="images/logo1.jpg" id="logoImage" ></a>
+
+			</div>
+			<ul>
+				<li class="selected">
+					<a href="home.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				<li>
+					<a href="products.html">products</a>
+				</li>
+				<li>
+					<a href="news.html">news</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+				<li>
+					<a href="login.html">login</a>
+				</li>
+				<li>
+					<a  href="shoppingCart.html">My Cart</a>
+					</li>
+			</ul>
+		</div>
+        <div class="article">
+            <img class="mySlides" src="images/onlineh.jpg" style="width:150; height:150;">
+                <img class="mySlides" src="images/th.jpg" style="width:150; height:150;" >
+                    <img class="mySlides" src="images/online2.jpg" style="width:150; height:150;" >
+					<img class="mySlides" src="images/online4.jpg" style="width:150; height:150;" >
+					<img class="mySlides" src="images/Have-phone-will-shop1.png" style="width:150; height:150;">
+				
+             <h1>Shop Online.</h1>
+        </div>
+		
+        
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+		
+	</div>
+	<div id="body">
+		<ul>
+			<li>
+				<a href="products.html"><img src="images/Huda-Kattan-Makeup-Products-page0.jpg" alt=""></a>
+				<b>Popular Departments</b>
+				<p>
+					Our online shopping system offers variety of deals and also products from different brands.
+				</p>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/Shoes-1.jpg" alt=""></a>
+				<b>Deal of the day</b>
+				<p>
+					Our online shopping system offers variety of deals and also products from different brands.
+				</p>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/forever21.jpg" alt=""></a>
+				<b>Popular Destinations</b>
+				<p>
+					Our online shopping system offers variety of deals and also products from different brands.
+				</p>
+			</li>
+			<li>
+				<a href="products.html"><img src="images/12Bags-500.jpg" alt=""></a>
+				<b>Best Brands</b>
+				<p>
+					Our online shopping system offers variety of deals and also products from different brands.
+				</p>
+			</li>
+		</ul>
+		<div>
+			<div class="featured">
+				<h2>Editor's Pick</h2>
+				<img src="images/depositphotos_6580689-Beautiful-business-woman-concentrating-while-working-on-computer.jpg" alt="" style="width:90px; height:90px;">
+				<h3>Hi! Welcome</h3>
+				<p>
+					<font size=+2>Gearing up for Indy</font>
+				</p>
+				<p>
+					<font size=+2>Classic Cortez</font>
+				</p>
+				<p>
+					<font size=+2>Coveted Collabs</font>
+				</p>
+               
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/s4xnyr2mCuI" frameborder="0" allowfullscreen></iframe>
+            
+			</div>
+			<div class="section">
+				<div class="article">
+					<h2>Today's deal</h2>
+					<p>
+                    New deals. Every day. Shop our Deal of the Day, Lightning Deals and more daily deals and limited-time sales. See deals you're watching <a href="products.html"><i><font color=blue>here</font color></i></a>, or let the deals come to you by receiving our daily deals <a href="https://mail.google.com"><i><font color=blue>email.</font color></i></a>
+					</p>
+				</div>
+				<div class="newsletter">
+					<img src="images/contact.jpg" alt="">
+					<p>
+						Need our Assistance????<span>Contact Us</span><a href="contact.html">here</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="connect">
+                <a href="https://twitter.com/" id="twitter">twitter</a>
+                <a href="http://facebook.com" id="facebook">facebook</a>
+                <a href="http://googleplus.com" id="googleplus">googleplus</a>
+             
+			</div>
+			<p>
+            &copy; copyright 2017 | created by Amandeep kaur, Manpreet sran and Chirag Hans.
+
+			</p>
+		</div>
+	</div>
+</body>
+</html>
